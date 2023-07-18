@@ -3,10 +3,12 @@
 @section ("content")
 <div class="text-center">
     <h1>Comics</h1>
-    <ul>
+    <ul class="list-unstyled">
         @foreach ($comics as $comic)
         <li>
-            {{$comic -> title}}
+            <a href="{{ route('comic.show', $comic -> id) }}">
+                {{$comic -> title}}
+            </a>
         </li>
         @endforeach
     </ul>
