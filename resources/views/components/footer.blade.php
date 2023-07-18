@@ -1,3 +1,3 @@
 <div class="container bg-dark text-light">
-    Footer
+    Available only today, hurry up! <a href="">Click here to get them all!</a>
 </div>
