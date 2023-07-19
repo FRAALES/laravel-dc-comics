@@ -5,7 +5,11 @@
         <h1>
             New Comic
         </h1>
-        <form>
+        <form method="POST" action="{{ route('comic.store') }}">
+
+            @csrf
+
+
             <label for="title">Title</label>
             <br>
             <input type="text" name="title">
