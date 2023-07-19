@@ -52,5 +52,21 @@
             <br>
 
         </form>
+
+        <br>
+    <br>
+    <br>
+    <br>
+   
+
+    <button>
+        <a href="{{ route('comic.index')}}" class="text-decoration-none">
+            Torna all'Index
+        </a>
+    </button>
+
+    <br>
+    <br>
+    <br>
     </div>
 @endsection
