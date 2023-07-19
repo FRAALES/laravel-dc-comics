@@ -1,5 +1,9 @@
 @extends("layouts.main-layout")
 
+@section('title')
+    Create
+@endsection
+
 @section("content")
     <div class="text-center">
         <h1>

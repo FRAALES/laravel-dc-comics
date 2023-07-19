@@ -1,5 +1,9 @@
 @extends("layouts.main-layout")
 
+@section('title')
+    Show
+@endsection
+
 @section ("content")
 <div class="text-center">
     <h1> {{ $comic -> title }}</h1>
@@ -12,6 +16,3 @@
     
 </div>
 @endsection
-
-
-

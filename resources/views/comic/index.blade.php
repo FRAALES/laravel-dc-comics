@@ -1,5 +1,9 @@
 @extends("layouts.main-layout")
 
+@section('title')
+    Index
+@endsection
+
 @section ("content")
 <div class="text-center">
     <h1>Comics</h1>
