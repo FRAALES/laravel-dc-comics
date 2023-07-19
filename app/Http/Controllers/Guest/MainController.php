@@ -37,6 +37,10 @@ class MainController extends Controller
             "type" => 'required'
         ]);
 
+        $comic = Comic :: create($data);
+
+        return redirect() -> route('show', $comic -> id);
+
         
     }
 
