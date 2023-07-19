@@ -28,9 +28,16 @@ class MainController extends Controller
 
 
     public function store(Request $request)  {
-        $data = $request -> all();
+        $data = $request -> all([
+            'title' => 'required',
+            "description" => 'required',
+            "price" => 'required|alpha_num|min:10|max:100', 
+            "series" =>'required', 
+            "sale_date" => 'required', 
+            "type" => 'required'
+        ]);
 
-        dd($data);
+        
     }
 
 }
