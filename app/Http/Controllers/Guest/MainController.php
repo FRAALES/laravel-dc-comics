@@ -42,6 +42,13 @@ class MainController extends Controller
         return redirect() -> route("comic.show", $comic ->id);
     }
 
+    public function bonifico () {
+
+        $comics = Comic :: all();
+
+        return view ('comic.bonifico', compact('comics'));
+    }
+
 }
 
 

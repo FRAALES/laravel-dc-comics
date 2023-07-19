@@ -12,6 +12,7 @@
         <form method="POST" action="{{ route('comic.store') }}">
 
             @csrf
+            @method("POST")
 
 
             <label for="title">Title</label>
